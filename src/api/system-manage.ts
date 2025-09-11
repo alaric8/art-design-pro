@@ -30,6 +30,8 @@ export async function fetchGetMenuList(delay = 300): Promise<MenuResponse> {
     const menuData = asyncRoutes
     // 处理菜单数据
     const menuList = menuData.map((route) => menuDataToRouter(route))
+    console.log(menuList)
+
     // 模拟接口延迟
     await new Promise((resolve) => setTimeout(resolve, delay))
 

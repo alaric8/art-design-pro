@@ -16,6 +16,7 @@
   },
   // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "typescript.tsserver.enableTracing": true,
+  "typescript.locale": "zh-CN",
   "vue.trace.server": "messages",
   "i18n-ally.localesPaths": [
     "src/locales",

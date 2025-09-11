@@ -116,7 +116,7 @@
     ElRadioGroup,
     ElButton,
     ElIcon,
-    FormInstance,
+    type FormInstance,
     ElRate,
     ElSlider,
     ElRow,

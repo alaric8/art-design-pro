@@ -18,7 +18,7 @@
       <div class="chat-container">
         <!-- 聊天消息区域 -->
         <div class="chat-messages" ref="messageContainer">
-          <template v-for="(message, index) in messages" :key="index">
+          <template v-for="(message) in messages" :key="index">
             <div :class="['message-item', message.isMe ? 'message-right' : 'message-left']">
               <ElAvatar :size="32" :src="message.avatar" class="message-avatar" />
               <div class="message-content">

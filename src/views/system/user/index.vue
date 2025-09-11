@@ -107,7 +107,7 @@
     core: {
       apiFn: fetchGetUserList,
       apiParams: {
-        current: 1,
+        page: 1,
         size: 20,
         ...searchForm.value
       },

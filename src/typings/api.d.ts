@@ -11,7 +11,7 @@ declare namespace Api {
     /** 分页参数 */
     interface PaginationParams {
       /** 当前页码 */
-      current: number
+      page: number
       /** 每页条数 */
       size: number
       /** 总条数 */

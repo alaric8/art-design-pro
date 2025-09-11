@@ -20,11 +20,12 @@
 <script setup lang="ts">
   import '@wangeditor/editor/dist/css/style.css'
   import { onBeforeUnmount, onMounted, shallowRef, computed } from 'vue'
+  //@ts-ignore
   import { Editor, Toolbar } from '@wangeditor/editor-for-vue'
   import { useUserStore } from '@/store/modules/user'
   import { ElMessage } from 'element-plus'
   import EmojiText from '@/utils/ui/emojo'
-  import { IDomEditor, IToolbarConfig, IEditorConfig } from '@wangeditor/editor'
+  import type  { IDomEditor, IToolbarConfig, IEditorConfig } from '@wangeditor/editor'
 
   defineOptions({ name: 'ArtWangEditor' })
 

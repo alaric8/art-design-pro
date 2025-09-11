@@ -56,7 +56,7 @@
 
 <script setup lang="ts">
   import { ElMessage, ElMessageBox, ElTag } from 'element-plus'
-  import { ButtonMoreItem } from '@/components/core/forms/art-button-more/index.vue'
+  import type { ButtonMoreItem } from '@/components/core/forms/art-button-more/index.vue'
   import { Setting, Edit, Delete } from '@element-plus/icons-vue'
   import { useTable } from '@/composables/useTable'
   import { fetchGetRoleList } from '@/api/system-manage'
@@ -101,7 +101,7 @@
     core: {
       apiFn: fetchGetRoleList,
       apiParams: {
-        current: 1,
+        page: 1,
         size: 20
       },
       // 排除 apiParams 中的属性

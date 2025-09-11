@@ -148,12 +148,12 @@ export const updatePaginationFromResponse = <T>(
   pagination.total = response.total ?? pagination.total ?? 0
 
   if (response.current !== undefined) {
-    pagination.current = response.current
+    pagination.page = response.current
   }
 
   const maxPage = Math.max(1, Math.ceil(pagination.total / (pagination.size || 1)))
-  if (pagination.current > maxPage) {
-    pagination.current = maxPage
+  if (pagination.page > maxPage) {
+    pagination.page = maxPage
   }
 }
 
@@ -164,7 +164,7 @@ export const createSmartDebounce = <T extends (...args: any[]) => Promise<any>>(
   fn: T,
   delay: number
 ): T & { cancel: () => void; flush: () => Promise<any> } => {
-  let timeoutId: NodeJS.Timeout | null = null
+  let timeoutId: number | null = null
   let lastArgs: Parameters<T> | null = null
   let lastResolve: ((value: any) => void) | null = null
   let lastReject: ((reason: any) => void) | null = null

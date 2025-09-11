@@ -1,4 +1,4 @@
-import { AppRouteRecordRaw } from '../utils/utils'
+import type { AppRouteRecordRaw } from '../utils/utils'
 import { RoutesAlias } from '../routesAlias'
 
 /**

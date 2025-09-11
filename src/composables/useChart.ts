@@ -4,7 +4,6 @@ import { storeToRefs } from 'pinia'
 import { useSettingStore } from '@/store/modules/setting'
 import { getCssVar } from '@/utils/ui'
 import type { BaseChartProps, ChartThemeConfig, UseChartOptions } from '@/types/component/chart'
-
 // 图表主题配置
 export const useChartOps = (): ChartThemeConfig => ({
   /** */

@@ -1,5 +1,5 @@
 import { useUserStore } from '@/store/modules/user'
-import { App, Directive, DirectiveBinding } from 'vue'
+import type { App, Directive, DirectiveBinding } from 'vue'
 
 /**
  * 角色权限指令

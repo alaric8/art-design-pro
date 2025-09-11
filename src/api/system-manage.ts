@@ -1,5 +1,5 @@
 import request from '@/utils/http'
-import { AppRouteRecord } from '@/types/router'
+import type { AppRouteRecord } from '@/types/router'
 import { asyncRoutes } from '@/router/routes/asyncRoutes'
 import { menuDataToRouter } from '@/router/utils/menuToRouter'
 
@@ -30,6 +30,8 @@ export async function fetchGetMenuList(delay = 300): Promise<MenuResponse> {
     const menuData = asyncRoutes
     // 处理菜单数据
     const menuList = menuData.map((route) => menuDataToRouter(route))
+    console.log(menuList)
+
     // 模拟接口延迟
     await new Promise((resolve) => setTimeout(resolve, delay))
 

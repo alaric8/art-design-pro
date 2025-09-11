@@ -31,7 +31,7 @@
   import * as echarts from 'echarts'
   import { getCssVar, hexToRgba } from '@/utils/ui'
   import { useChartOps, useChartComponent } from '@/composables/useChart'
-  import { EChartsOption } from 'echarts'
+  import type { EChartsOption } from 'echarts'
 
   defineOptions({ name: 'ArtLineChartCard' })
 

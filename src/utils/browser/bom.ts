@@ -22,6 +22,7 @@ export function getScrollPosition(el: HTMLElement | Window = window): { x: numbe
 
 // 获取 URL 参数
 export function getURLParameters(url: string): Record<string, string> {
+  //@ts-ignore
   return Object.fromEntries(new URLSearchParams(url.split('?')[1]).entries())
 }
 

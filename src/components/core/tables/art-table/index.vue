@@ -78,7 +78,7 @@
   import { ref, computed, nextTick, onMounted, onUnmounted, watch } from 'vue'
   import { ElPagination, ElTable, ElTableColumn, ElEmpty, type TableProps } from 'element-plus'
   import { storeToRefs } from 'pinia'
-  import { ColumnOption } from '@/types'
+  import type { ColumnOption } from '@/types'
   import { useTableStore } from '@/store/modules/table'
   import { useCommon } from '@/composables/useCommon'
   import { useElementSize, useWindowSize } from '@vueuse/core'

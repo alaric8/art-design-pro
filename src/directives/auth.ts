@@ -1,5 +1,5 @@
 import { router } from '@/router'
-import { App, Directive, DirectiveBinding } from 'vue'
+import type { App, Directive, DirectiveBinding } from 'vue'
 
 /**
  * 权限指令（后端控制模式可用）

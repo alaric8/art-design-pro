@@ -54,7 +54,7 @@
 
 <script setup lang="ts">
   import { computed, onMounted, ref, watch, nextTick, onUnmounted } from 'vue'
-  import { LocationQueryRaw, useRoute, useRouter } from 'vue-router'
+  import { type LocationQueryRaw, useRoute, useRouter } from 'vue-router'
   import { useI18n } from 'vue-i18n'
   import { ArrowDown, Close } from '@element-plus/icons-vue'
   import { storeToRefs } from 'pinia'
@@ -63,9 +63,9 @@
   import { useUserStore } from '@/store/modules/user'
   import { formatMenuTitle } from '@/router/utils/utils'
   import { useSettingStore } from '@/store/modules/setting'
-  import { MenuItemType } from '../../others/art-menu-right/index.vue'
+  import type { MenuItemType } from '../../others/art-menu-right/index.vue'
   import { useCommon } from '@/composables/useCommon'
-  import { WorkTab } from '@/types'
+  import type { WorkTab } from '@/types'
 
   defineOptions({ name: 'ArtWorkTab' })
 

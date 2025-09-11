@@ -1,5 +1,5 @@
 import { useSettingStore } from '@/store/modules/setting'
-import { Router } from 'vue-router'
+import type { Router } from 'vue-router'
 import NProgress from 'nprogress'
 import { useCommon } from '@/composables/useCommon'
 

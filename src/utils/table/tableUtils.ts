@@ -164,7 +164,7 @@ export const createSmartDebounce = <T extends (...args: any[]) => Promise<any>>(
   fn: T,
   delay: number
 ): T & { cancel: () => void; flush: () => Promise<any> } => {
-  let timeoutId: NodeJS.Timeout | null = null
+  let timeoutId: number | null = null
   let lastArgs: Parameters<T> | null = null
   let lastResolve: ((value: any) => void) | null = null
   let lastReject: ((reason: any) => void) | null = null

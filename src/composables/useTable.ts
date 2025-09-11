@@ -172,7 +172,7 @@ function useTableImpl<TApiFn extends (params: any) => Promise<any>>(
   let abortController: AbortController | null = null
 
   // 缓存清理定时器
-  let cacheCleanupTimer: NodeJS.Timeout | null = null
+  let cacheCleanupTimer: number | null = null
 
   // 搜索参数
   const searchParams = reactive(

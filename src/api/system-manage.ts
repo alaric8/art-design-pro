@@ -1,5 +1,5 @@
 import request from '@/utils/http'
-import { AppRouteRecord } from '@/types/router'
+import type { AppRouteRecord } from '@/types/router'
 import { asyncRoutes } from '@/router/routes/asyncRoutes'
 import { menuDataToRouter } from '@/router/utils/menuToRouter'
 

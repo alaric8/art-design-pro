@@ -1,6 +1,6 @@
 import { useTheme } from '@/composables/useTheme'
 import { useSettingStore } from '@/store/modules/setting'
-import { RouteLocationNormalized, RouteRecordRaw } from 'vue-router'
+import type { RouteLocationNormalized, RouteRecordRaw } from 'vue-router'
 import AppConfig from '@/config'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'

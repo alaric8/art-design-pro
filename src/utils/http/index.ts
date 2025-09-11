@@ -1,4 +1,5 @@
-import axios, { AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
+import axios from 'axios'
+import type { AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import { useUserStore } from '@/store/modules/user'
 import { ApiStatus } from './status'
 import { HttpError, handleError, showError, showSuccess } from './error'
@@ -13,7 +14,7 @@ const UNAUTHORIZED_DEBOUNCE_TIME = 3000
 
 /** 401防抖状态 */
 let isUnauthorizedErrorShown = false
-let unauthorizedTimer: NodeJS.Timeout | null = null
+let unauthorizedTimer: number | null = null
 
 /** 扩展 AxiosRequestConfig */
 interface ExtendedAxiosRequestConfig extends AxiosRequestConfig {

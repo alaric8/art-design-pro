@@ -1,5 +1,5 @@
 import { RoutesAlias } from '../routesAlias'
-import { AppRouteRecord } from '@/types/router'
+import type { AppRouteRecord } from '@/types/router'
 
 /**
  * 菜单列表、异步路由

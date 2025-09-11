@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, computed, nextTick } from 'vue'
-import { MenuThemeType } from '@/types/store'
+import type { MenuThemeType } from '@/types/store'
 import AppConfig from '@/config'
 import { SystemThemeEnum, MenuThemeEnum, MenuTypeEnum, ContainerWidthEnum } from '@/enums/appEnum'
 import { setElementThemeColor } from '@/utils/ui'

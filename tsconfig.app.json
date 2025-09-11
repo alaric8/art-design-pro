@@ -2,11 +2,14 @@
     "compilerOptions": {
         "target": "esnext",
         "module": "esnext",
-        "moduleResolution": "node",
+        "moduleResolution": "bundler",
         "strict": true,
         "jsx": "preserve",
         "sourceMap": true,
+        "noUnusedLocals": true,
         "resolveJsonModule": true,
+        "isolatedModules": true,
+        "verbatimModuleSyntax": true,
         "esModuleInterop": true,
         "lib": [
             "esnext",

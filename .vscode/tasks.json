@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "vue check",
+            "type": "shell",
+            "command": "pnpm",
+            "runOptions": {},
+            "args": [
+                "run",
+                "check"
+            ],
+            "problemMatcher": "$tsc-watch",
+            "group": "none"
+        }
+    ],
+}

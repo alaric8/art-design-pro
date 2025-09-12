@@ -5,11 +5,10 @@
   "scripts": {
     "dev": "vite --open",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview",
-    "commit": "git-cz",
+    "preview": "vite preview",
+    "check": "vue-tsc -noEmit",
     "clean:dev": "tsx scripts/clean-dev.ts"
   },
-
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
     "@vue/reactivity": "^3.4.35",

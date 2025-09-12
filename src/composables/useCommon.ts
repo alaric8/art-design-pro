@@ -2,7 +2,7 @@ import { getTabConfig } from '@/utils/ui'
 import { useSettingStore } from '@/store/modules/setting'
 import { useMenuStore } from '@/store/modules/menu'
 
-// 通用函数
+// TODO  通用函数
 export function useCommon() {
   const settingStore = useSettingStore()
   const { showWorkTab, tabStyle } = storeToRefs(settingStore)

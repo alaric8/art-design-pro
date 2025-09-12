@@ -17,14 +17,40 @@
     "src/enums": true,
     "src/mock": true,
     "src/locales": true,
-    "src/types": true
+    "src/types": true,
+    ".prettierignore": true
   },
   // "typescript.tsserver.experimental.enableProjectDiagnostics": true,
   "typescript.tsserver.enableTracing": true,
   "typescript.locale": "zh-CN",
   "vue.trace.server": "messages",
-  "i18n-ally.localesPaths": [
-    "src/locales",
-    "src/locales/langs"
-  ]
+  "intelephense.environment.phpVersion": "8.1.33",
+  "intelephense.environment.documentRoot": "/workspace/php/lottery-hyperf/bin/hyperf.php",
+  "intelephense.environment.includePaths": [
+    "/workspace/php/lottery-hyperf"
+  ],
+  "rest-client.previewOption": "exchange",
+  "rest-client.fontSize": 16,
+  "rest-client.defaultHeaders": {
+    "User-Agent": "vscode-restclient",
+    "Host": "localhost:9501"
+  },
+  "vim.incsearch": true,
+  "editor.mouseWheelZoom": true,
+  "vim.scroll": 100,
+  "workbench.editor.untitled.labelFormat": "name",
+  "rest-client.previewResponseInUntitledDocument": true,
+  "workbench.startupEditor": "readme",
+  "prettier.requireConfig": true,
+  // "vim.seajHighlightColor": "#ce9178",
+  // "vim.searchMatchColor": "#aaa000",
+  // "vim.searchMatchTextColor": "#f70000",
+  // "vim.searchHighlightTextColor": "#f70000",
+  "editor.suggest.preview": true,
+  "githubPullRequests.remotes": [
+    "origin",
+    "upstream"
+  ],
+  "githubPullRequests.allowFetch": true,
+  "githubPullRequests.assignCreated": ""
 }
